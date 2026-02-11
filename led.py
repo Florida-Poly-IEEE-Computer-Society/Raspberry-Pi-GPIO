@@ -1,4 +1,4 @@
-from gpiozero import LED
+from gpiozero import LED, Button
 import time
 
 # led = LED(26)
@@ -9,8 +9,8 @@ import time
 led = LED(26)
 
 while True:
-	led.on()
-	sleep(1)
-	led.off()
-	sleep(1)
+    led.on()
+    time.sleep(1)
+    led.off()
+    time.sleep(1)
 
